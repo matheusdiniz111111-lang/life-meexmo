@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Meexmo</title>
+    <meta name="description" content="Preview do app Life Meexmo em visual vermelho e preto." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <div class="phone-frame">
+        <header class="topbar">
+          <div class="status-left">
+            <span class="dot red"></span>
+            <span class="dot dark"></span>
+            <span class="dot dark"></span>
+          </div>
+          <div class="clock">13:10</div>
+          <div class="status-right">
+            <span>🔋</span>
+            <span>📶</span>
+          </div>
+        </header>
+
+        <main class="screen active" id="login-screen">
+          <div class="login-wrap">
+            <div class="logo-box">
+              <span>🏋️</span>
+            </div>
+            <h1>Life Meexmo</h1>
+            <p>Força, disciplina e evolução.</p>
+
+            <div class="field">
+              <label>Email</label>
+              <input type="email" placeholder="seu@email.com" />
+            </div>
+
+            <div class="field">
+              <label>Senha</label>
+              <input type="password" placeholder="••••••••" />
+            </div>
+
+            <button class="primary-btn" id="enterBtn">Entrar</button>
+
+            <div class="register-row">
+              <span>Ainda não tem conta?</span>
+              <button class="link-btn">Criar agora</button>
+            </div>
+          </div>
+        </main>
+
+        <main class="screen" id="dashboard-screen">
+          <header class="dashboard-header">
+            <div>
+              <div class="title-mini">Life Meexmo</div>
+            </div>
+            <div class="avatar">M</div>
+          </header>
+
+          <div class="dashboard-content">
+            <div class="tab-bar" role="tablist" aria-label="Navegação principal">
+              <button class="tab active" data-tab="corrida" aria-selected="true">Corrida</button>
+              <button class="tab" data-tab="academia">Academia</button>
+              <button class="tab" data-tab="alimentacao">Alimentação</button>
+              <button class="tab" data-tab="conquistas">Conquistas</button>
+            </div>
+
+            <section class="panel active" id="corrida">
+              <div class="panel-header">
+                <div>
+                  <h2>Corredor Pro</h2>
+                  <small>Evolução física em corrida</small>
+                </div>
+                <span class="chip">21.4 km / semana</span>
+              </div>
+
+              <div class="stat-card accent">
+                <small>Última sessão</small>
+                <div class="big-stat">10.6 km</div>
+                <div class="row">
+                  <span>⏱️</span>
+                  <span>48 min 20 s</span>
+                </div>
+              </div>
+
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <span>Pace médio</span>
+                  <strong>5:05 /km</strong>
+                </div>
+                <div class="mini-card">
+                  <span>Distância total</span>
+                  <strong>356.2 km</strong>
+                </div>
+                <div class="mini-card">
+                  <span>VO₂ max</span>
+                  <strong>48.9</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" id="academia">
+              <div class="panel-header">
+                <div>
+                  <h2>Força e performance</h2>
+                  <small>Progresso dos treinos</small>
+                </div>
+                <span class="chip">Volume total: 5.6k kg</span>
+              </div>
+
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <span>Supino</span>
+                  <strong>92 kg</strong>
+                </div>
+                <div class="mini-card">
+                  <span>Agachamento</span>
+                  <strong>120 kg</strong>
+                </div>
+                <div class="mini-card">
+                  <span>Peso corporal</span>
+                  <strong>74.8 kg</strong>
+                </div>
+                <div class="mini-card">
+                  <span>Sessões este mês</span>
+                  <strong>14</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" id="alimentacao">
+              <div class="panel-header">
+                <div>
+                  <h2>Planejamento alimentar</h2>
+                  <small>Meta de perda de peso</small>
+                </div>
+                <span class="chip">2.150 kcal</span>
+              </div>
+
+              <div class="stat-card">
+                <div class="row between">
+                  <span>Meta calorias</span>
+                  <strong>2.300 kcal</strong>
+                </div>
+                <div class="progress"><span style="width: 74%"></span></div>
+                <small>Hoje consumiu 1.700 kcal de 2.300 kcal</small>
+                <button class="primary-btn small">Analisar refeição com câmera</button>
+              </div>
+
+              <div class="mini-grid">
+                <div class="mini-card">
+                  <span>Proteína</span>
+                  <strong>140 g</strong>
+                </div>
+                <div class="mini-card">
+                  <span>Carboidratos</span>
+                  <strong>220 g</strong>
+                </div>
+                <div class="mini-card">
+                  <span>Gorduras</span>
+                  <strong>52 g</strong>
+                </div>
+              </div>
+            </section>
+
+            <section class="panel" id="conquistas">
+              <div class="panel-header">
+                <div>
+                  <h2>Conquistas e rivalidade</h2>
+                  <small>Ranking da semana</small>
+                </div>
+                <span class="chip">Top 3: 1.700 pts</span>
+              </div>
+
+              <div class="achievement-list">
+                <div class="achievement-item"><span>🏅</span><div><strong>Maratona da semana</strong><small>42 km</small></div></div>
+                <div class="achievement-item"><span>🔥</span><div><strong>Consistência</strong><small>7 dias</small></div></div>
+                <div class="achievement-item"><span>💪</span><div><strong>Força total</strong><small>18.000 kg</small></div></div>
+                <div class="achievement-item"><span>⚖️</span><div><strong>Emagrecimento</strong><small>-3.4 kg</small></div></div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
